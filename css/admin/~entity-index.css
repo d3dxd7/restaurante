@@ -1,0 +1,20 @@
+    .table td {
+      vertical-align: middle;
+    }
+    .table tr:nth-child(n+3) td:first-child {
+      position: relative;
+    }
+    .table tr:nth-child(n+3):hover td:first-child:before {
+      content: '';
+      width: 5px;
+      height: 9px;
+      position: absolute;
+      top: 50%;
+      margin-top: -4px;
+      left: -20px;
+      background: url('../../img/admin/arrow-right.png') no-repeat center center;
+    }
+
+    .table th a {
+      text-decoration: none;
+    }

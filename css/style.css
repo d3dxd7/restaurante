@@ -1,0 +1,229 @@
+body {
+	background-image: url(../img/home.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+	height: 2000px;
+}
+
+
+._debug {
+	border: 1px solid red;
+}
+
+.barra-verde {
+	background: #C2E8CE;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	padding: 17px;
+}
+
+.barra-verde img {
+width: 16px;
+height: 16px;
+margin-right: 38px;
+}
+
+.container{
+	width: 1280px;
+}
+
+.header {
+	display: table;
+	width: 100%;
+	padding: 17px 0;
+	background-color: #fff;
+}
+
+.header div{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+.header .coluna1 {
+	width: 215px;
+	padding-left: 40px;
+}
+
+
+.header .coluna3 {
+text-align: right;
+padding-right: 42px;
+}
+
+
+.header .coluna3 a{
+	margin-left: 5px;
+	display: inline-block;
+}
+
+
+
+.menu{
+	margin: 0;
+	padding: 0;
+
+}
+
+
+.menu > li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+	margin-right: 40px;
+}
+
+
+.menu > li > a{
+	font: 500 15px "poppins",sans-serif;
+	color: #1F1F1F;
+}
+
+
+.menu > .down > a {
+background-image: url("../img/down.png");
+background-repeat: no-repeat;
+background-position: center right;
+padding-right: 15px;
+
+}
+
+
+.menu .down{
+	position: relative;
+}
+
+
+.menu .down ul{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 25px;
+	left: 0;
+	display: none;
+	background-color: #fff;
+	width: 100px;
+}
+
+.menu .down:hover ul{
+	display: block;
+}
+
+
+
+
+
+.menu .down ul li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+.menu .down ul a {
+	font: 500 15px "poppins",sans-serif;
+	color: #1f1f1f;
+}
+
+
+.menu a {
+	text-decoration: none;
+}
+
+
+.menu .down ul a:hover{
+	margin-left: 10px;
+}
+
+
+.produtos {
+	text-align: center;
+	padding-top: 80px;
+}
+
+
+.produtos h2 {
+	font: 700 40px "cormorant";
+	color: #1f1f1f;
+	margin-bottom: 35px;
+} 
+
+
+.produtos h2 span {
+	color: #ff8126;
+}
+
+
+.produto-thumb .imagem {
+	height: 160px;
+	border: 1px solid red;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+}
+
+
+
+.produto-thumb .imagem1 {
+	background-image: url(../img/produto1.jpg);
+} 
+
+.produto-thumb .imagem2 {
+	background-image: url(../img/produto2.jfif);
+} 
+
+.produto-thumb .imagem3 {
+	background-image: url(../img/produto3.jfif);
+} 
+
+.produto-thumb .imagem4 {
+	background-image: url(../img/produto4.jpg);
+}
+
+.fecha-barra-verde {
+	border: 1px solid red;
+	cursor: pointer;
+}
+
+.banner {
+	padding-top: 125px;
+	padding-left: 40px;
+	padding-bottom: 195px;
+	background-image: url('../img/banner.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.banner h2 {
+	font-family: 'Cormorant';
+	font-size: 50px;
+	font-weight: bold;
+	color: #1f1f1f;
+	margin: 0;
+}
+
+.banner h3 {
+	font-family: 'Poppins';
+	font-size: 26px;
+	font-weight: light;
+	color: #1f1f1f;
+	margin: 0;
+	margin-top: 10px;
+	margin-bottom: 34px;
+}
+
+.botao-laranja {
+	display: inline-block;
+	border-radius: 5px;
+	background-color: #FF8126;
+	color: #fff;
+	font-family: 'Poppins';
+	font-size: 18px;
+	font-weight: medium;
+	padding: 8px 45px;
+	text-decoration: none;
+}
