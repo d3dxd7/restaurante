@@ -49,6 +49,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$preco = $_POST['preco'];
 	$preco = str_replace('.','', $preco);
 	$preco = str_replace(',','.', $preco);
+	$descricao = htmlentities($_POST['descricao']);
+
 
 	if($_FILES['file']['size'] > 0) {
 
@@ -64,11 +66,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 		unlink($diretorio . $_POST['imagem']);
 
-		$sql = "UPDATE produtos SET categoria_id = '{$categoria_id}', nome = '{$nome}', preco = '{$preco}', imagem = '{$nome_da_imagem}' WHERE id = '{$_GET['id']}'";
+		$sql = "UPDATE produtos SET categoria_id = '{$categoria_id}', nome = '{$nome}', preco = '{$preco}', imagem = '{$nome_da_imagem}', descricao = '{$descricao}' WHERE id = '{$_GET['id']}'";
 
 	} else {
 		
-		$sql = "UPDATE produtos SET categoria_id = '{$categoria_id}', nome = '{$nome}', preco = '{$preco}' WHERE id = '{$_GET['id']}'";
+		$sql = "UPDATE produtos SET categoria_id = '{$categoria_id}', nome = '{$nome}', preco = '{$preco}', descricao = '{$descricao}' WHERE id = '{$_GET['id']}'";
 
 	}
 

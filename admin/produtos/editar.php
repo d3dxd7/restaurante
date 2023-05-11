@@ -100,6 +100,13 @@ $query_categorias = mysqli_query($conexao, $sql_categorias);
             <br>
             <div>
                 <label>
+                    Descricao
+                </label>
+                <textarea name="descricao" id="" class="form-control"><?=$produto['descricao'] ?></textarea>
+            </div>
+            <br>
+            <div>
+                <label>
                     Imagem
                 </label>
                 <br>

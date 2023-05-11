@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 -- Estrutura da tabela `categorias`
 --
 
-CREATE TABLE `categorias` (
+CREATE TABLE IF NOT EXISTS `categorias` (
   `id` int(11) NOT NULL,
   `nome` varchar(128) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
@@ -158,7 +158,7 @@ INSERT INTO `pedidos` (`id`, `cliente_id`, `produto_id`, `preco`, `quantidade`, 
 -- Estrutura da tabela `produtos`
 --
 
-CREATE TABLE `produtos` (
+CREATE TABLE IF NOT EXISTS `produtos` (
   `id` int(11) NOT NULL,
   `nome` varchar(128) NOT NULL,
   `imagem` varchar(256) DEFAULT NULL,
